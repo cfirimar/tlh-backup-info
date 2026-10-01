@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TLH Ledger Backups</title>
+<link rel="stylesheet" href="style.css">
+<main>
+  <p class="eyebrow">Personal portfolio bookkeeping</p>
+  <h1>TLH Ledger Backups</h1>
+  <p class="lead">A personal backup tool that saves consistent copies of a locally hosted tax-loss-harvesting ledger to the owner's private Google Drive.</p>
+  <h2>What it does</h2>
+  <p>The tool runs on the owner's Raspberry Pi. It creates local SQLite snapshots after transaction or position imports and on a daily schedule, then uploads and verifies them using rclone. Failed uploads remain queued for retry.</p>
+  <h2>Google Drive access</h2>
+  <p>The tool requests the <code>drive.file</code> permission to create and manage its own backup files. It does not request general access to unrelated Drive files. The owner authorizes the destination Google account; backups are not publicly shared by the tool.</p>
+  <h2>Personal use only</h2>
+  <p>This website describes the tool. It does not provide access to the dashboard, accept portfolio uploads, or offer a public investment service. The actual ledger and dashboard remain on the owner's machine.</p>
+  <footer><a href="privacy.html">Privacy policy</a> <span>Maintained by cfirimar</span></footer>
+</main>
+</html>

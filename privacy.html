@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | TLH Ledger Backups</title>
+<link rel="stylesheet" href="style.css">
+<main>
+  <p class="eyebrow">TLH Ledger Backups</p>
+  <h1>Privacy Policy</h1>
+  <p>Effective October 1, 2026. This policy covers the personal TLH Ledger Backups tool maintained by cfirimar.</p>
+  <h2>Data and purpose</h2>
+  <p>The tool backs up the owner's local ledger database, which may contain imported transactions, positions, lot-selection records, recommendations, and bookkeeping events. Backup folders may also contain an uploaded CSV, recovery settings, sector-weight CSVs, and a verification manifest. This data is used solely for backup verification and recovery.</p>
+  <h2>Google account permissions</h2>
+  <p>The owner explicitly authorizes a Google account through OAuth. The tool requests <code>https://www.googleapis.com/auth/drive.file</code> to create, read, verify, and manage backup files created by the application. It does not request general access to unrelated Google Drive files. OAuth credentials and refresh tokens are stored locally on the owner's machines so scheduled uploads can run unattended.</p>
+  <h2>Storage and sharing</h2>
+  <p>Backup files are stored locally and uploaded to the authorized account's private Google Drive using rclone. They are not application-encrypted; access depends on the owner's machine security and Google account permissions. The tool does not make backups public, sell data, use it for advertising, or share it with other users. Google processes uploaded files as the chosen storage provider. API keys, notification tokens, and OAuth credentials are excluded from backup folders and the public website.</p>
+  <h2>Retention and deletion</h2>
+  <p>By default, the tool retains the latest 30 successfully uploaded backup folders locally and in Drive. Pending local backups are kept for retry. The owner can change retention or delete backups manually. Revoking authorization does not automatically delete existing backups.</p>
+  <h2>Control and revocation</h2>
+  <p>The owner can disable the backup service, remove its local OAuth configuration, and revoke Google access through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Future uploads stop once authorization is revoked. Existing files can be deleted through Google Drive, including its Trash if permanent deletion is desired.</p>
+  <h2>This public website</h2>
+  <p>These informational pages contain no portfolio records, login form, analytics code, or application cookies. GitHub Pages hosts the site and may process ordinary request information under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+  <h2>Questions and changes</h2>
+  <p>Contact the maintainer through the <a href="https://github.com/cfirimar/tlh-backup-info/issues">public website repository</a>. Do not post financial records or credentials there. This policy will be updated if the tool's data practices change.</p>
+  <footer><a href="index.html">Homepage</a> <span>Maintained by cfirimar</span></footer>
+</main>
+</html>
